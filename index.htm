@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="icon" href="favicon-32x32.png">
+
+</head>
+<body style="color: #3A3A3A;">
+<form>
+    <div style="background-color: #FAF3DD; max-width: 85%; margin: auto;">
+        <h1 align="center">User Feedback Form</h1>
+        <hr>
+        <fieldset>
+        <legend>&nbsp;&nbsp;<b>Personal Information</b></legend>
+            <p><b>&nbsp;&nbsp;Full Name</b></p>
+            <div style="display: flex;">
+                <div style="width: 33%;">
+                    <label for="fname">&nbsp;&nbsp;First Name : </label>
+                    <input type="text" id="fname" name="fname">
+                </div> 
+                <div style="width: 33%;">
+                    <label for="mname">&nbsp;&nbsp;Middle Name : </label>
+                    <input type="text" id="mname" name="mname">
+                </div> 
+                <div style="width: 33%;">
+                    <label for="lname">&nbsp;&nbsp;Last Name : </label>
+                    <input type="text" id="lname" name="lname">
+                </div> 
+            </div><br>
+        
+            <div style="display: flex;">
+                <div style="width: 50%;">
+                    <label for="age">&nbsp;&nbsp;<b>Age : </b></label>
+                    <input type="number" id="age" name="age" min="1">
+                </div>
+                <div style="width: 50%;">
+                    <label for="gender">&nbsp;&nbsp;<b>Gender : </b></label>
+                    <select name="gender" id="gender" style="cursor: pointer;">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <p><b>&nbsp;&nbsp;Address</b></p>
+            <div>
+                <label for="address1">&nbsp;&nbsp;Street Address : </label>
+                <input type="text" id="address1" name="address1" size="120">
+            </div><br>
+            <div>
+                <label for="address2">&nbsp;&nbsp;Street Address Line 2 : </label>
+                <input type="text" id="address2" name="address2" size="120">
+            </div><br>
+            <div style="display: flex;">
+                <div style="width: 50%;">
+                    <label for="city">&nbsp;&nbsp;City : </label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div style="width: 50%;">
+                    <label for="state">&nbsp;&nbsp;State : </label>
+                    <input type="text" name="state" id="state">
+                </div>
+            </div><br>
+            <div>
+                <label for="zipcode">&nbsp;&nbsp;Postal / Zip code : </label>
+                <input type="text" id="zipcode" name="zipcode" size="120">
+            </div><br>
+            <div style="display: flex;">
+                <div style="width: 50%;">
+                    <label for="phone">&nbsp;&nbsp;<b>Phone Number : </b></label>
+                    <input type="number" id="phone" name="phone">
+                </div>
+                <div style="width: 50%;">
+                    <label for="mail">&nbsp;&nbsp;<b>Email : </b></label>
+                    <input type="text" name="mail" id="mail" size="50">
+                </div>
+            </div><br>
+        </fieldset>
+        <fieldset>
+            <legend>Questions and Details</legend>
+            <div>   
+                <p>&nbsp;&nbsp;1. Where did you hear about us?</p>
+                <input type="radio" id="google" name="ref" value="google">
+                <label for="google">Search Engine(google, bing, etc.) </label><br>
+                <input type="radio" id="fb" name="ref" value="fb">
+                <label for="fb">Social Media(Instagram, Facebook, etc.) </label><br>
+                <input type="radio" id="friends" name="ref" value="friends">
+                <label for="friends">Friends &amp; Family</label><br>
+                <input type="radio" id="reddit" name="ref" value="reddit">
+                <label for="reddit">Online Community(Reddit, Quora, Discord, etc.)</label><br>
+                <input type="radio" id="blog" name="ref" value="blog">
+                <label for="blog">Blog or Article</label>
+            </div>
+            <div>   
+                <p>&nbsp;&nbsp;2. What features do you like?</p>
+                <input type="checkbox" id="use" name="feature" value="use">
+                <label for="use">Ease of Use </label><br>
+                <input type="checkbox" id="design" name="feature" value="design">
+                <label for="design">Design & User Interface </label><br>
+                <input type="checkbox" id="speed" name="feature" value="speed">
+                <label for="speed">Performance & Speed</label><br>
+                <input type="checkbox" id="options" name="feature" value="options">
+                <label for="options">Customization Options</label><br>
+                <input type="checkbox" id="afford" name="feature" value="afford">
+                <label for="afford">Affordability</label>
+            </div><br> 
+            <div>
+                <label for="ratings">&nbsp;&nbsp;3. Rate your experience </label>
+                <select name="ratings" id="ratings" style="cursor: pointer;">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <p>&nbsp;&nbsp;4.Please feel free if you have any additional comments</p>
+                &nbsp;&nbsp;<textarea rows="7" cols="100" placeholder="Enter your comments here..."></textarea>
+            </div>
+        </fieldset><br>
+        <div style="display: flex; justify-content: center; gap:20px">
+        <div>
+                <input type="submit" style="background-color: #FF6B6B; height: 25px; width: 100px; border: none; border-radius: 5px; cursor: pointer;">
+            </div>
+            <div>
+                <input type="reset" style="background-color: #FF6B6B; height: 25px; width: 100px; border: none; border-radius: 5px; cursor: pointer;">
+            </div>
+        </div>
+        
+    </div>
+</form>
+</body>
+</html>
